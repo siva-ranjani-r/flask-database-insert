@@ -14,7 +14,6 @@ def fun():
         cur =conn.cursor()
         cur.execute("insert into db (id,scheme_name,nav) values (?,?,?)", (id,scheme_name,nav))
         conn.commit()
-
     return render_template("index.html")
 
 
